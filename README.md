@@ -22,3 +22,6 @@ paren: "("expr")"
 Parser paren =rule().sep("(").ast(expr).sep(")");
 ```
 
+## 解释执行
+利用eval()方法和Envirnment(环境对象)分析抽象语法树解释执行程序。
+底层利用HashMap进行变量和值的存储
