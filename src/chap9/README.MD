@@ -35,6 +35,7 @@
 </div>
 
 ### 语法规则
+```
 member : def | simple
 
 class_body : "{" [member] {(";"|EOL)[member]}"}"
@@ -44,7 +45,7 @@ defclass : "class" INDENTIFIER ["extends" INDENTIFIER] class_body
 postfix : "class" INDENTIFIER | "(" [args] ")"
 
 program : [defclass | def | statement] (";" |EOL)
-
+```
 依靠eval方法实现语法规则
 
 ### 通过闭包表示对象
